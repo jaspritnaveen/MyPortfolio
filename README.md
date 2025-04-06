@@ -24,4 +24,3 @@ This is my **personal portfolio project** built using **Angular**. The goal of t
 - VS Code (IDE)
 
 ---
-
