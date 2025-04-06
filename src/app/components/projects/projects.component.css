@@ -1,0 +1,16 @@
+.projects {
+  padding: 2rem;
+}
+
+.project {
+  margin-bottom: 1.5rem;
+}
+
+.project h3 {
+  color: #1e1e2f;
+}
+
+.project a {
+  color: #61dafb;
+  text-decoration: none;
+}

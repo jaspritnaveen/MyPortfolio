@@ -1,0 +1,13 @@
+.contact {
+  padding: 2rem;
+  background-color: #f0f0f0;
+}
+
+.contact h2 {
+  color: #1e1e2f;
+}
+
+.contact a {
+  color: #61dafb;
+  text-decoration: none;
+}
