@@ -1,30 +1,56 @@
-.hero-wrap {
-  position: relative;
-  background: #d29d9d;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
+/* Split background */
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to right, #eaefff 50%, #ffffff 50%);
   text-align: center;
+  position: relative;
 }
 
-.mouse-icon {
-  margin-top: 30px;
-  display: inline-block;
-  color: white;
-  font-size: 30px;
-  animation: bounce 2s infinite;
+/* Intro text */
+.intro-content {
+  z-index: 1;
 }
 
-@keyframes bounce {
-  0%,
-  100% {
-    transform: translateY(0);
+.intro-sub {
+  color: #2c63ff;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.intro-name {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 0;
+  color: #000;
+}
+
+.intro-role {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #000;
+}
+
+/* Rotating text styling */
+.txt-rotate > .wrap {
+  border-right: 0.08em solid #666;
+  color: #2c63ff;
+  font-weight: bold;
+  animation: blink-caret 1s step-end infinite;
+}
+
+/* Cursor animation */
+@keyframes blink-caret {
+  from,
+  to {
+    border-color: transparent;
   }
   50% {
-    transform: translateY(-10px);
+    border-color: #666;
   }
-}
-
-.wrap {
-  border-right: 0.08em solid #fff;
 }

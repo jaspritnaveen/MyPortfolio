@@ -1,19 +1,71 @@
-.about {
-  padding: 2rem;
-  color: #1e1e2f;
+* {
+  box-sizing: border-box;
 }
 
-.about h2 {
-  font-size: 2rem;
-  margin-bottom: 1rem;
+body {
+  font-family: "Roboto Mono", monospace;
+  color: #999999;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  line-height: 1.8;
 }
 
-.about h3 {
-  margin-top: 1.5rem;
-  color: #61dafb;
+.section {
+  padding: 70px 0;
+  overflow: hidden;
 }
 
-.about ul {
-  padding-left: 1.5rem;
-  list-style-type: square;
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.col-md-6 {
+  width: 100%;
+  padding: 15px;
+}
+
+@media (min-width: 768px) {
+  .col-md-6 {
+    width: 50%;
+  }
+}
+
+.message-box h2 {
+  font-size: 36px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.message-box p {
+  margin-bottom: 20px;
+}
+
+.sim-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #000;
+  color: #000;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.sim-btn:hover {
+  background-color: #000;
+  color: #fff;
+}
+
+.right-box-pro img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.5);
 }
