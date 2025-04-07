@@ -18,7 +18,7 @@
   color: #2c63ff;
   font-weight: bold;
   letter-spacing: 2px;
-  font-size: 2rem;
+  font-size: 1.5rem;
   margin-bottom: 10px;
 }
 
@@ -47,7 +47,15 @@
   font-weight: bold;
   animation: blink-caret 1s step-end infinite;
 }
-
+.down-arrow {
+  background-color: #eaefff;
+  color: #2c63ff;
+  rotate: -45deg;
+}
+.arrow {
+  rotate: 45deg;
+  animation: bounce 1.5s infinite;
+}
 /* Cursor animation */
 @keyframes blink-caret {
   from,
@@ -56,5 +64,16 @@
   }
   50% {
     border-color: #666;
+  }
+}
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(-75%);
+    animation-timing-function: cubic-bezier(0.8, 0, 1, 1);
+  }
+  50% {
+    transform: translateY(0);
+    animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
   }
 }
